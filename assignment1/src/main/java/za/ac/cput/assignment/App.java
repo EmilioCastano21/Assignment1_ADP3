@@ -6,8 +6,28 @@ package za.ac.cput.assignment;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    private String carBrand;
+    private int modelNumber;
+
+    public void setCarBrand(){
+        this.carBrand = carBrand;
+    }
+    public String getCarBrand(){
+        return carBrand;
+    }
+
+    public void setModelNumber(){
+        this.modelNumber = modelNumber;
+    }
+    public int getModelNumber(){
+        return modelNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "App{" +
+                "carBrand='" + carBrand + '\'' +
+                ", modelNumber=" + modelNumber +
+                '}';
     }
 }
