@@ -1,10 +1,12 @@
 package za.ac.cput.assignment;
 
-import org.junit.Before;
-import org.junit.Ignore;
-import org.junit.Test;
+import jdk.nashorn.internal.ir.annotations.Ignore;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertSame;
 
 /**
  * Unit test for simple App.
@@ -16,7 +18,7 @@ public class PersonTest
     private Person person3;
     private int num1,num2;
 
-    @Before
+    @BeforeEach
     public void setUp()  {
         person1=new Person();
         person2=new Person();
@@ -42,7 +44,8 @@ public class PersonTest
         assertSame(person1,person2);
     }
 
-    @Test(timeout=10)
+    @Timeout(10)
+    @Test
     public void timeoutTest(){
         for(int i=1;i<=3;i++){
             String loop="person"+i;
