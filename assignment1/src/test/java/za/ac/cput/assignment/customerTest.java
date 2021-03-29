@@ -13,7 +13,7 @@ class customerTest {
     private customer cust3;
 
     @BeforeEach
-    public void setup()
+     void setup()
     {
         cust1 = new customer();
         cust2 = new customer();
@@ -22,13 +22,13 @@ class customerTest {
         cust1 = cust3;
     }
     @Test
-    public void testIdentity()
+    void testIdentity()
     {
         assertSame(cust1, cust3);
     }
 
     @Test
-    public void testEquality()
+     void testEquality()
     {
         assertEquals(cust1, cust3);
 
@@ -36,14 +36,14 @@ class customerTest {
 
     @Ignore
     @Test
-    public void testEqualitys()
+    void testEqualitys()
     {
         assertEquals(cust1, cust3);
 
     }
 
     @Test
-    public void FailingTest()
+    void FailingTest()
     {
         assertSame(cust2, cust3);
     }
@@ -51,7 +51,7 @@ class customerTest {
 
     @Test
     @Timeout(10)
-    public void timeoutCheck()
+    void timeoutCheck()
     {
         for (int i =0 ; i<100 ; i++)
             System.out.println(i);
