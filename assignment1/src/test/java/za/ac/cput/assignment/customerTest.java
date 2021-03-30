@@ -10,27 +10,27 @@ class customerTest {
 
     private customer cust1;
     private customer cust2;
-    private customer cust3;
+    private customer cust4;
 
     @BeforeEach
      void setup()
     {
         cust1 = new customer();
         cust2 = new customer();
-        cust3 = new customer();
+        cust4 = new customer();
 
-        cust1 = cust3;
+        cust1 = cust4;
     }
     @Test
     void testIdentity()
     {
-        assertSame(cust1, cust3);
+        assertSame(cust1, cust4);
     }
 
     @Test
      void testEquality()
     {
-        assertEquals(cust1, cust3);
+        assertEquals(cust1, cust4);
 
     }
 
@@ -38,14 +38,14 @@ class customerTest {
     @Test
     void testEqualitys()
     {
-        assertEquals(cust1, cust3);
+        assertEquals(cust1, cust4);
 
     }
 
     @Test
     void FailingTest()
     {
-        assertSame(cust2, cust3);
+        assertSame(cust2, cust4);
     }
 
 
