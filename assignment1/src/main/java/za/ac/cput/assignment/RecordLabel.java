@@ -1,10 +1,10 @@
 package za.ac.cput.assignment;
 
 /**
- * Hello world!
+ * Author: Marchello Carolus 218234457
  *
  */
-public class App 
+public class RecordLabel
 {
     private String artist;
     private int numberOfSongs;

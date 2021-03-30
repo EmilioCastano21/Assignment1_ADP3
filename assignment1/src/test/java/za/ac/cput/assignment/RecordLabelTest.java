@@ -13,23 +13,23 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 /**
- * Unit test for simple App.
+ * Author: Marchello Carolus 218234457
  *
  */
-public class AppTest
+public class RecordLabelTest
 {
-    private App artist1;
-    private App artist2;
-    private App artist3;
-    private App artist4;
+    private RecordLabel artist1;
+    private RecordLabel artist2;
+    private RecordLabel artist3;
+    private RecordLabel artist4;
 
 
     @BeforeEach
     void setUp() {
-        artist1 = new App();
-        artist2 = new App();
+        artist1 = new RecordLabel();
+        artist2 = new RecordLabel();
         artist3 = artist1;
-        artist4 = new App();
+        artist4 = new RecordLabel();
 
     }
 
