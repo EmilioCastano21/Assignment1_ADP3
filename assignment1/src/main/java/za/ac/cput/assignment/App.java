@@ -6,28 +6,28 @@ package za.ac.cput.assignment;
  */
 public class App 
 {
-    private String carBrand;
-    private int modelNumber;
+    private String artist;
+    private int numberOfSongs;
 
     public void setCarBrand(){
-        this.carBrand = carBrand;
+        this.artist = artist;
     }
     public String getCarBrand(){
-        return carBrand;
+        return artist;
     }
 
     public void setModelNumber(){
-        this.modelNumber = modelNumber;
+        this.numberOfSongs = numberOfSongs;
     }
     public int getModelNumber(){
-        return modelNumber;
+        return numberOfSongs;
     }
 
     @Override
     public String toString() {
         return "App{" +
-                "carBrand='" + carBrand + '\'' +
-                ", modelNumber=" + modelNumber +
+                "carBrand='" + artist + '\'' +
+                ", modelNumber=" + numberOfSongs +
                 '}';
     }
 }

@@ -1,62 +1,72 @@
 package za.ac.cput.assignment;
 
 
-import jdk.nashorn.internal.ir.annotations.Ignore;
+
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+
+
 
 /**
  * Unit test for simple App.
  */
 public class AppTest
 {
-    private App car1;
-    private App car2;
-    private App car3;
+    private App artist1;
+    private App artist2;
+    private App artist3;
 
 
     @BeforeEach
     void setUp() {
-        car1 = new App();
-        car2 = new App();
-        car3 = car1;
+        artist1 = new App();
+        artist2 = new App();
+        artist3 = artist1;
 
     }
 
     //Object Identity
     @Test
     void testIdentity(){
-        assertSame(car1, car3);
+        assertSame(artist1, artist3);
     }
-    private void assertSame(App carBrand1, App carBrand3) {
-    }
+
 
     //Object Equality
     @Test
     void testEquality(){
-        assertEqual(car1, car3);
+        assertEquals(artist1, artist3);
     }
-    private void assertEqual(App carBrand1, App carBrand3) {
-    }
+
 
     //Failing test
     @Test
     void failingTest(){
-        assertEqual(car1, car2);
+        assertSame(artist1, artist3);
     }
 
     //Disabling Test
-    @Ignore
+    @Disabled
     @Test
     void testDis(){
-        assertSame(car1, car2);
+        assertSame(artist1, artist3);
     }
 
     //Timeouts
+    @Test
+    @Timeout(10)
+    void timeoutMethod(){
+        for(int i = 0; i < 20; i++){
+            System.out.println(i);
+
+        };
 
 
-
-
-
+    }
 
 }
