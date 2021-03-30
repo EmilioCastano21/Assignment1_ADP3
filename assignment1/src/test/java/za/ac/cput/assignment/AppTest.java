@@ -14,12 +14,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Unit test for simple App.
+ *
  */
 public class AppTest
 {
     private App artist1;
     private App artist2;
     private App artist3;
+    private App artist4;
 
 
     @BeforeEach
@@ -27,6 +29,7 @@ public class AppTest
         artist1 = new App();
         artist2 = new App();
         artist3 = artist1;
+        artist4 = new App();
 
     }
 
