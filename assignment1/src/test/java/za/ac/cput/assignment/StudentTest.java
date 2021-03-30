@@ -49,5 +49,4 @@ class StudentTest {
             System.out.println(loop);
         }
     }
-
 }
