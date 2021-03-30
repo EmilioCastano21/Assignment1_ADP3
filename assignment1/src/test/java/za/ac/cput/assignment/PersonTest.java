@@ -1,10 +1,10 @@
 package za.ac.cput.assignment;
 
-import jdk.nashorn.internal.ir.annotations.Ignore;
+
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertSame;
 
@@ -38,7 +38,7 @@ public class PersonTest
         assertSame(person1,person3);
     }
 
-    @Ignore
+    @Disabled
     @Test
     public void failingTest(){
         assertSame(person1,person2);
