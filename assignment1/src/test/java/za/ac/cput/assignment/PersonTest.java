@@ -1,5 +1,9 @@
 package za.ac.cput.assignment;
-
+/*
+@author:219169640 - Casey Michael Keven Crafford
+ADP372S Assignment 1 Term 1
+Using Github, Maven and Test Driven Development
+ */
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
@@ -8,9 +12,6 @@ import org.junit.jupiter.api.Timeout;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertSame;
 
-/**
- * Unit test for simple App.
- */
 public class PersonTest
 {
     private Person person1;
