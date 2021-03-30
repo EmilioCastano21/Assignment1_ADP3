@@ -1,10 +1,8 @@
 package za.ac.cput.assignment;
 
-import org.junit.Before;
-import org.junit.Ignore;
-import org.junit.Test;
-
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertSame;
 
 public class PetTest {
 
@@ -14,7 +12,7 @@ public class PetTest {
     private Pet pet4;
     private Pet pet5;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         pet1 = new Pet();
         pet2 = new Pet();
@@ -33,16 +31,18 @@ public class PetTest {
         assertEquals(pet4, pet5);
     }
 
+    @Disabled
     @Test
     public void failingTest() {
         assertSame(pet1, pet4);
     }
 
-    @Ignore
-    @Test(timeout = 10)
+    @Timeout(10)
+    @Test
     public void timeoutTest() {
         for (int i = 1; i <= 3; i++) {
             System.out.println(pet1);
         }
     }
 }
+
