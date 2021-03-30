@@ -1,5 +1,5 @@
 package za.ac.cput.assignment;
-
+// author Malcolm Camelo 217137334
 public class Cars {
 
     private String name,brand,colour;
